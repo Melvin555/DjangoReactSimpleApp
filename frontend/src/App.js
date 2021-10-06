@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import Modal from "./components.Modal";
+import axios from 'axios';
 
-
-
-
-class App extends Component{
-  constructor(props){
-    super(prop);
+class App extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
-      viewCompleted:false;
-      taskList:
+      viewCompleted: false,
+      activeItem: {
+        title: "",
+        description: "",
+        completed: false
+      }
     }
   }
 }
-
-export default App;
