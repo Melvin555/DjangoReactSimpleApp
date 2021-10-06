@@ -4,5 +4,7 @@ This is a ToDo app basically built using Django as the backend and React as the 
 
 
 Credit to https://github.com/BekBrace/django-react-app-Task_Manager
-This repo is just personal repo to study based on what BekBrace has introduced in his own repo.
-I suggest to check original repo to learn more
+This repo is just personal repo to study,exercise,redo based on what BekBrace has introduced in his own repo.
+I suggest to check original repo to learn more. Pretty cool project for a beginner lever. Great thanks to BekBrace
+
+
