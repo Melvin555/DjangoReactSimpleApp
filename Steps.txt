@@ -1,0 +1,78 @@
+To recreate the whole project from scratch, first of all, python and node.js should have been installed in the system
+
+For the backend,
+pip install pipenv, pipenv install django
+
+django-admin startproject backend
+cd backend
+python manage.py startapp todo
+code .
+
+python manage.py migrate
+python manage.py runserver
+
+In the settings.py, INSTALLED_APPS, add 'todo'
+
+In the models.py, Start To Tweak (STT) the file
+
+Then python manage.py makemigrations, then python manage.py migrate
+
+Then go to admin.py in the todo, then STT the file
+
+After that, python manage.py createsuperuser
+
+Then, python manage.py runserver
+
+After that, pipenv install djangorestframework django-cors-headers
+
+
+Then, inside the settings.py, add 'rest_framework' and 'corsheaders' in the list of INSTALLED_APPS
+Still inside the settings.pt, need to whitelist the port 3000 by adding
+CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+Add also 'corsheader.middleware.CorsMiddleware' under MIDDLEWARE
+
+
+Inside the todo folder, create serializers.py, then STT the file
+
+Then go to view.py of todo folder, and STT the file
+
+Then go to backend project folder's urls.py file, add import todo, import views, and add include to the line from django.urls import path
+and also add from rest_framework import routers. Then continue to STT the file
+
+
+To create the react app,
+npx create-react-app frontend
+
+To start the development server, type (insde the app folder)
+npm start
+
+Install reactstrap and bootstrap
+npm install reactstrap bootstrap
+
+Then go to index.js and add
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+Then STT the App.js file
+
+Then go to index.css and STT the file
+
+To manipulate the component, create another folder under src called component, and create a Modal.js file
+
+STT that Modal.js file
+
+And then, import CustomeModel from './components/Modal' in the App.js
+
+Inside the frontend folder, using a command prompt, do
+npm install axios
+
+
+
+
+
+
+
+
+
+
+
+

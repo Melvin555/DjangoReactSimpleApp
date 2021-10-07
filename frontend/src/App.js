@@ -21,7 +21,6 @@ class App extends Component {
     this.refreshList();
   }
 
- 
   refreshList = () => {
     axios   //Axios to send and receive HTTP requests
       .get("http://localhost:8000/api/tasks/")
